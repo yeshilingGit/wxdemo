@@ -1,0 +1,18 @@
+<template name="8d3800f6">
+  <view class="_div data-v-72c16bc0 container-box">
+    <view class="_div data-v-72c16bc0 left">
+      <image src="{{img}}" class="_img data-v-72c16bc0"></image>
+    </view>
+    <view class="_div data-v-72c16bc0 right">
+      <view class="_div data-v-72c16bc0 title">{{title}}</view>
+      <view class="_div data-v-72c16bc0 label">
+        <view class="_div data-v-72c16bc0">{{label}}</view>
+      </view>
+      <view class="_div data-v-72c16bc0 uper">{{uper}}</view>
+      <view class="_div data-v-72c16bc0 playNum">
+        <view class="_div data-v-72c16bc0">{{playNum}}</view>
+        <view class="_div data-v-72c16bc0">{{date}}</view>
+      </view>
+    </view>
+  </view>
+</template>
