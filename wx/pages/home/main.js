@@ -104,6 +104,10 @@ if (false) {(function () {
 //
 //
 //
+//
+//
+//
+//
 
 
 // import axios from 'axios'
@@ -112,12 +116,29 @@ if (false) {(function () {
     videoLink: __WEBPACK_IMPORTED_MODULE_0__components_videoLink_vue__["a" /* default */]
   },
   mounted: function mounted() {},
+  onPullDownRefresh: function onPullDownRefresh() {
+    var _this = this;
+
+    if (this.pullDownRefreshFlag) {
+      return;
+    }
+    this.pullDownRefreshFlag = true;
+    wx.startPullDownRefresh({
+      success: function success() {
+        console.log('开始下拉刷新...');
+        setTimeout(function () {
+          _this.pullDownRefreshFlag = false;
+        }, 3000);
+      }
+    });
+  },
   data: function data() {
     return {
       a: 123,
       navArray: [{ title: '热门', key: 1 }, { title: '追番', key: 2 }],
+      pullDownRefreshFlag: false,
       activeKey: 1,
-      vLinkArr: [{ id: 1, title: '3年300万订阅，我有些话想跟大家说...', label: '9万点赞', uper: '宝剑嫂', playNum: '43.4万', date: '7-20' }, { id: 2, title: '人类早期驯服野生熊本熊的珍贵影象', label: '很多人点赞', uper: '人类早期巡抚', playNum: '31.7万', date: '7-21' }]
+      vLinkArr: [{ id: 1, title: '3年300万订阅，我有些话想跟大家说...', label: '9万点赞', uper: '宝剑嫂', playNum: '43.4万', date: '7-20' }, { id: 2, title: '人类早期驯服野生熊本熊的珍贵影象', label: '很多人点赞', uper: '人类早期巡抚', playNum: '31.7万', date: '7-21' }, { id: 3, title: '人类早期驯服野生熊本熊的珍贵影象', label: '很多人点赞', uper: '人类早期巡抚', playNum: '31.7万', date: '7-21' }, { id: 4, title: '人类早期驯服野生熊本熊的珍贵影象', label: '很多人点赞', uper: '人类早期巡抚', playNum: '31.7万', date: '7-21' }, { id: 5, title: '人类早期驯服野生熊本熊的珍贵影象', label: '很多人点赞', uper: '人类早期巡抚', playNum: '31.7万', date: '7-21' }, { id: 6, title: '人类早期驯服野生熊本熊的珍贵影象', label: '很多人点赞', uper: '人类早期巡抚', playNum: '31.7万', date: '7-21' }, { id: 7, title: '人类早期驯服野生熊本熊的珍贵影象', label: '很多人点赞', uper: '人类早期巡抚', playNum: '31.7万', date: '7-21' }, { id: 8, title: '人类早期驯服野生熊本熊的珍贵影象', label: '很多人点赞', uper: '人类早期巡抚', playNum: '31.7万', date: '7-21' }]
     };
   },
 

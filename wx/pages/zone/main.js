@@ -96,7 +96,7 @@ if (false) {(function () {
 /* harmony default export */ __webpack_exports__["a"] = ({
   data: function data() {
     return {
-      litterImgArr: [{ title: '番剧' }, { title: '国创' }, { title: '纪录片' }, { title: '动画' }, { title: '音乐' }, { title: '舞蹈' }, { title: '游戏' }, { title: '知识' }, { title: '数码' }, { title: '生活' }, { title: '鬼畜' }, { title: '时尚' }, { title: '娱乐' }, { title: '影视' }, { title: '电影' }, { title: '电视剧' }]
+      litterImgArr: [{ title: '番剧' }, { title: '国创' }, { title: '纪录片' }, { title: '动画' }, { title: '音乐' }, { title: '舞蹈' }, { title: '游戏' }, { title: '知识' }, { title: '数码' }, { title: '生活' }, { title: '鬼畜' }, { title: '时尚' }, { title: '娱乐' }, { title: '影视' }, { title: '电影' }, { title: '电视剧1' }]
     };
   }
 });

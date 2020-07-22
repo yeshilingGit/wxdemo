@@ -18,4 +18,5 @@
 .container-box.data-v-9439c984 {
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-around;
 }
