@@ -1,7 +1,0 @@
-<template name="7cf6e9ea">
-  <view class="_div data-v-5eca2e54">
-    <image src="{{imgUrl}}" style="height: 100vh" class="_img data-v-5eca2e54"></image>
-    <view class="_div data-v-5eca2e54 skip" bindtap="handleProxy" data-eventid="{{'0'}}" data-comkey="{{$k}}">
-      {{skip}}{{time}}s </view>
-  </view>
-</template>
